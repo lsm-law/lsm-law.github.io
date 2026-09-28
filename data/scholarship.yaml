@@ -1,13 +1,14 @@
 # Scholarship. Newest first within each group.
 # Fields: title, authors (co-authors only; omit if solo), citation, year,
-#         abstract (optional; paste the SSRN abstract verbatim), links (list of {name, url}),
-#         note (optional, e.g. "Cited in ..."), status: published | draft | in-progress
+#         abstract (Markdown; blank line between paragraphs), links (list of {name, url}),
+#         cited_in (optional list of {text, url}), recognition (optional), status: draft | in-progress
 
 articles:
   - title: "No News is Bad News"
-    subtitle: "Review of Martha Minow, Saving the News (2021)"
     year: 2022
     citation: "Book review (2022)"
+    abstract: |
+      Review of Martha Minow, *Saving the News* (2021).
     links:
       - name: SSRN
         url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4898776"
@@ -15,7 +16,15 @@ articles:
   - title: "The Broken Branch: Capitalism, the Constitution, and the Press"
     year: 2020
     citation: "125 Penn St. L. Rev. 1 (2020)"
-    note: "Cited in The Future of Press Freedom (RonNell Andersen Jones & Sonja West eds., 2025); Roosevelt Institute, The Political Economy of the US Media System (2025); Abrams Institute at Yale Law School, The Press Clause: The Forgotten First Amendment (2024); amicus brief on behalf of media organizations and press freedom advocates in Jenner & Block v. Dep't of Justice and Perkins Coie v. Dep't of Justice (D.D.C. 2025)."
+    abstract: |
+      The First Amendment to the Constitution guarantees "freedom ... of the press," an explicit textual recognition of what the founding generation, informed by their immediate historical experience, frequently hailed as the most important political liberty—the "bulwark" upon which all other freedoms relied. From this fertile intellectual and legal soil, cultivated by generous subsidies, a thriving and vibrant institutional press emerged as an undeniable asset to American civil society. Today, that press is dying. Industry revenues have declined by more than 70% in the last two decades, leaving tens of thousands of journalists without jobs and millions of Americans without meaningful access to quality journalism. The reason for this media apocalypse is simple: America has assigned to the free market the task of producing an adequate supply of a public good, with most of its value lying in externalities, that cannot be made profitable to the extent that it is desirable. As a result, American journalism is in a market-induced death spiral.
+
+      This Article argues that, given the Framers' correct understanding that a sustainable, powerful institutional press is a precondition to representative government, the market-driven collapse of the press is a constitutional crisis.
+    cited_in:
+      - text: "RonNell Andersen Jones & Sonja R. West eds., *The Future of Press Freedom* (Cambridge Univ. Press 2025)"
+        url: "https://www.cambridge.org/core/books/future-of-press-freedom/842C61CE63FEC39BB762FCFD421EE33B"
+      - text: "Floyd Abrams Institute for Freedom of Expression, Yale Law School, *The Press Clause: The Forgotten First Amendment* (2024)"
+        url: "https://law.yale.edu/sites/default/files/documents/area/center/isp/abrams-institute-the-press-clause-report.pdf"
     links:
       - name: Journal
         url: "https://elibrary.law.psu.edu/pslr/vol125/iss1/1/"
@@ -27,6 +36,8 @@ articles:
   - title: "Addiction and Expression"
     year: 2020
     citation: "47 Hastings Const. L.Q. 197 (2020)"
+    abstract: |
+      Addictive products—such as tobacco, alcohol, and gambling—have been considered legitimate regulatory targets throughout American history and for thousands of years prior. Expressive products—such as newspapers, books, movies, and video games—have in the United States been considered essentially immune from content-based regulation, thanks to the First Amendment. But what if the content of an expressive product makes it addictive? Which tradition must give in: the ancient power of legislatures to protect society at large from the wide-ranging impacts of addiction, or the legal shield that has generated a thriving culture of artistic independence? This Article is the first to explore the question of how the First Amendment should treat intentionally addictive speech. Social research indicates that certain behavioral addictions premised on the compulsive use of expressive products—particularly video games and pornography—are real dysfunctions of the brain, explainable in part by the intentional choices of developers and producers to create addictive products. And regulators are beginning to unsteadily lurch into action, without any evidence that they are taking the First Amendment into account. This Article proposes that, under current doctrine, any such regulation must satisfy strict scrutiny. It then argues that, more fundamentally, intentionally addictive expression does not merit First Amendment coverage.
     links:
       - name: Journal
         url: "https://repository.uclawsf.edu/hastings_constitutional_law_quaterly/vol47/iss2/3/"
@@ -39,6 +50,8 @@ articles:
     authors: "with Joseph Blocher"
     year: 2019
     citation: "28 Wm. & Mary Bill Rts. J. 319 (2019)"
+    abstract: |
+      The study of "Rights Dynamism," exemplified in Timothy Zick's new book on the First Amendment's relationship with the rest of the Bill of Rights, can enrich our understanding of constitutional rights. It also opens a door to another potentially fruitful arena: what we call "Doctrinal Dynamism." Constitutional rights often interact and generate new meanings and applications by way of importing and exporting one another's doctrinal rules, even when the rights themselves do not intersect directly in the context of a single case. Focusing on these doctrinal exchanges can illuminate the strengths and weaknesses of various rules, the specific interests underlying different constitutional guarantees, and the sometimes inextricable relationship between particular rights and their constitutive doctrines. In this Article, we explore the definitional challenge—what is doctrine?—before identifying some lessons learned when doctrine migrates between rights and when it stays home.
     links:
       - name: Journal
         url: "https://scholarship.law.wm.edu/wmborj/vol28/iss2/4/"
@@ -50,7 +63,18 @@ articles:
   - title: "Leave Your Guns at Home: The Constitutionality of a Prohibition on Carrying Firearms at Political Demonstrations"
     year: 2018
     citation: "68 Duke L.J. 175 (2018)"
-    note: "Cited in Timothy Zick, Managed Dissent (2023). Duke Law 2019 Writing Award."
+    abstract: |
+      Armed protest has long been a tool of American political groups. Neo-Nazis, socialists, fascists, antifascists, the Black Panthers, neo-Confederates, and others have all taken up arms not necessarily to do violence, but to do politics. But such protests always risk rending a violent hole in our social fabric. If war is politics by other means, armed protests erase the distinction.
+
+      This Note argues that the Constitution's relevant guarantees of individual rights—the First and Second Amendments—do not include a constitutional right to armed protest.
+
+      With respect to free speech, it is unlikely that current doctrine would cover armed protests. But, considering ongoing First Amendment expansion, this Note argues for a categorical exclusion of guns, and perhaps other express constitutional guarantees, from expressive conduct doctrine.
+
+      As for the Second Amendment, armed protest is not within the historically understood scope of the right to keep and bear arms. More importantly, though, *Heller*'s "sensitive places" exception recognizes a fundamental reality about the relationship between the First and Second Amendments: the Second Amendment must cede certain arenas—churches, government buildings, schools, theaters, protests, and the like—to the First. Instruments of violence cannot be permitted to distort outcomes in the marketplace of ideas.
+    cited_in:
+      - text: "Timothy Zick, *Managed Dissent: The Law of Public Protest* (Cambridge Univ. Press 2023)"
+        url: "https://www.cambridge.org/core/books/managed-dissent/12A7E4D9035D78C4A5BF24B1D81B0746"
+    recognition: "Duke Law 2019 Writing Award"
     links:
       - name: Journal
         url: "https://dlj.law.duke.edu/article/leave-your-guns-at-home-morgan-vol68-iss1/"

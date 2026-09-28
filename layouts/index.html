@@ -25,14 +25,20 @@
     <section id="scholarship" aria-labelledby="published-h">
       <h2 id="published-h" class="section-title">Published Work</h2>
       {{- range site.Data.scholarship.articles }}
+      {{- $pub := . }}
       <article class="card pub">
         <h3 class="pub-title">{{ .title }}</h3>
         {{- with .subtitle }}<p class="pub-subtitle">{{ . }}</p>{{ end }}
         <p class="pub-meta">{{ with .authors }}<span class="pub-authors">{{ . }}</span> · {{ end }}<span class="pub-cite">{{ .citation }}</span></p>
         {{- with .abstract }}
-        <details class="abstract"><summary>Abstract</summary><p>{{ . }}</p></details>
+        <div class="pub-abstract">{{ . | markdownify }}</div>
         {{- end }}
-        {{- with .note }}<p class="pub-note">{{ . }}</p>{{ end }}
+        {{- if or .cited_in .recognition }}
+        <p class="pub-cited">
+          {{- with .cited_in }}<span class="cited-label">Cited in</span> {{ range $i, $c := . }}{{ if $i }}<span class="sep" aria-hidden="true">·</span> {{ end }}{{ if $c.url }}<a href="{{ $c.url }}">{{ $c.text | markdownify }}</a>{{ else }}{{ $c.text | markdownify }}{{ end }}{{ end }}{{ end }}
+          {{- with .recognition }}{{ if $pub.cited_in }}<br>{{ end }}<span class="cited-label">Recognition</span> {{ . }}{{ end }}
+        </p>
+        {{- end }}
         {{ partial "actions.html" .links }}
       </article>
       {{- end }}

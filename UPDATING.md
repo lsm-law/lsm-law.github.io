@@ -31,6 +31,10 @@ Open a file on github.com, click the pencil icon, edit, and click "Commit change
 
 Every push to the `main` branch rebuilds and republishes the site through GitHub Actions (`.github/workflows/deploy.yml`). If the site doesn't update, open the repository's **Actions** tab; a red X means the build failed, and the error message there is what to paste to Claude.
 
+## Search engines
+
+The site is set to stay out of search results: every page tells search engines not to list it (`noindex`), `robots.txt` keeps crawlers away from the PDFs, and known AI crawlers are blocked. Anyone with the link can still open it. To let search engines list the site, set `search_hidden: false` in `hugo.yaml`.
+
 ## Keep in mind
 
 - Everything in this repository is public, including PDFs that aren't linked from any page. Don't add files you wouldn't post.

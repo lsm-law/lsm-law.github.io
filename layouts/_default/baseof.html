@@ -7,6 +7,9 @@
   <title>{{ $title }}</title>
   {{- $desc := .Params.description | default site.Params.description }}
   <meta name="description" content="{{ $desc }}">
+  {{- if site.Params.search_hidden }}
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  {{- end }}
   <link rel="canonical" href="{{ .Permalink }}">
   <meta property="og:title" content="{{ $title }}">
   <meta property="og:description" content="{{ $desc }}">

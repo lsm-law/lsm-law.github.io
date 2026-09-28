@@ -2,7 +2,7 @@ baseURL: "https://lsm-law.github.io/"
 title: "Luke Smith Morgan"
 languageCode: en-us
 enableRobotsTXT: true
-disableKinds: [taxonomy, term, rss]
+disableKinds: [taxonomy, term, rss, sitemap]
 
 params:
   name: "Luke Smith Morgan"
@@ -21,6 +21,9 @@ params:
       url: "https://directory.campbell.edu/people/luke-smith-morgan/"
     - name: H2O Open Casebooks
       url: "https://opencasebook.org/users/134007/"
+  # Keep the site out of search engines and AI crawlers (link-only).
+  # Set to false to let search engines list it.
+  search_hidden: true
   # GaryKing.org/mysite options, from the intake form
   mysite:
     credit: true      # footer "Created using GaryKing.org/mysite"

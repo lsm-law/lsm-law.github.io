@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="narrow">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <div class="card cv-card">
+    <img class="portrait small" src="{{ site.Params.photo | relURL }}" alt="Portrait of {{ site.Params.name }}" width="600" height="600" loading="lazy">
+    <div class="prose">{{ .Content }}</div>
+  </div>
+</div>
+{{ end }}

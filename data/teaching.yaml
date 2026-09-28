@@ -1,0 +1,61 @@
+# Courses and teaching materials. Files live in static/files/teaching/.
+
+courses:
+  - name: "Civil Procedure"
+    slug: civil-procedure
+    terms: "Fall 2025, Spring 2026, Fall 2026"
+    description: "Civil procedure is really the combination of two separate but related courses. First, civil procedure teaches the fundamentals of the adjudicative process in the United States. Second, the course is also about the organization of the American judicial system and how the federal-state structure shapes civil litigation."
+    materials:
+      - group: Syllabus
+        items:
+          - label: "Syllabus, Spring 2026"
+            file: "files/teaching/civpro-syllabus-spring-2026.pdf"
+      - group: Final Exams
+        items:
+          - label: "Final Exam, Spring 2026"
+            file: "files/teaching/civpro-final-exam-spring-2026.pdf"
+          - label: "Final Exam, Fall 2025"
+            file: "files/teaching/civpro-final-exam-fall-2025.pdf"
+      - group: Practice Assessments
+        items:
+          - label: "Personal Jurisdiction: The Case of the Indiscreet Engine (Fall 2026)"
+            file: "files/teaching/civpro-practice-personal-jurisdiction-fall-2026.pdf"
+          - label: "Pleading: Peeling Back the NDA (Spring 2026)"
+            file: "files/teaching/civpro-practice-pleading-spring-2026.pdf"
+          - label: "Personal Jurisdiction: The Case of the Nattering Nanny-Bot (Spring 2026)"
+            file: "files/teaching/civpro-practice-personal-jurisdiction-spring-2026.pdf"
+          - label: "Personal Jurisdiction (Fall 2025)"
+            file: "files/teaching/civpro-practice-personal-jurisdiction-fall-2025.pdf"
+          - label: "Pleading: Kabletown v. Lemon (Fall 2025)"
+            file: "files/teaching/civpro-practice-pleading-fall-2025.pdf"
+
+  - name: "Federal Courts"
+    slug: federal-courts
+    terms: "Spring 2026, Fall 2026"
+    description: "Federal Courts sits at the intersection of Constitutional Law and Civil Procedure, taking the “constitutional” parts of Civil Procedure—especially jurisdiction and the doctrines related to federalism—and cranks them up to 11."
+    materials:
+      - group: Syllabus
+        items:
+          - label: "Syllabus, Fall 2026"
+            file: "files/teaching/fedcourts-syllabus-fall-2026.pdf"
+      - group: Final Exams
+        items:
+          - label: "Final Exam, Spring 2026"
+            file: "files/teaching/fedcourts-final-exam-spring-2026.pdf"
+
+  - name: "Constitutional Law II (Rights)"
+    slug: constitutional-law-2
+    terms: "Summer 2026, Spring 2027"
+    materials:
+      - group: Coursebook
+        items:
+          - label: "Constitutional Law II (H2O Open Casebook)"
+            url: "https://opencasebook.org/casebooks/18113/"
+      - group: Final Exams
+        items:
+          - label: "Final Exam, Summer 2026"
+            file: "files/teaching/conlaw2-final-exam-summer-2026.pdf"
+
+  - name: "Constitutional Law I (Structure)"
+    slug: constitutional-law-1
+    terms: "Spring 2027"

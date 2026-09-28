@@ -1,0 +1,54 @@
+baseURL: "https://lsm-law.github.io/"
+title: "Luke Smith Morgan"
+languageCode: en-us
+enableRobotsTXT: true
+disableKinds: [taxonomy, term, rss]
+
+params:
+  name: "Luke Smith Morgan"
+  title: "Assistant Professor of Law"
+  institution: "Campbell University, Norman A. Wiggins School of Law"
+  institution_short: "Campbell Law"
+  email: "smith-morgan@campbell.edu"
+  photo: "images/headshot.jpg"
+  description: "Luke Smith Morgan is an Assistant Professor of Law at Campbell University's Norman A. Wiggins School of Law, writing on the First and Second Amendments, democracy, and constitutional doctrine."
+  profiles:
+    - name: SSRN
+      url: "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6381985"
+    - name: Campbell Law Repository
+      url: "https://scholarship.law.campbell.edu/exhibit/faculty-publications/luke-smith-morgan-assistant-professor-of-law/"
+    - name: Campbell Directory
+      url: "https://directory.campbell.edu/people/luke-smith-morgan/"
+    - name: H2O Open Casebooks
+      url: "https://opencasebook.org/users/134007/"
+  # GaryKing.org/mysite options, from the intake form
+  mysite:
+    credit: true      # footer "Created using GaryKing.org/mysite"
+    discovery: false  # no hidden generator tag / JSON-LD marker
+  updated: "Sept. 2026"
+
+menus:
+  main:
+    - name: Scholarship
+      url: /#scholarship
+      weight: 10
+    - name: Writing & Media
+      pageRef: /writing
+      weight: 20
+    - name: Teaching
+      pageRef: /teaching
+      weight: 30
+    - name: Coursebooks
+      pageRef: /coursebooks
+      weight: 40
+    - name: Bio
+      pageRef: /bio
+      weight: 50
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+minify:
+  minifyOutput: true

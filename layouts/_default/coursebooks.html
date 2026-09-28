@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="narrow">
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{- with .Content }}<div class="lede">{{ . }}</div>{{ end }}
+  {{- with site.Data.coursebooks }}
+  {{- range .books }}
+  <article class="card pub">
+    <h2 class="pub-title">{{ .title }}</h2>
+    <p class="pub-meta">H2O Open Casebooks, {{ .year }}</p>
+    {{- with .description }}<p class="course-desc">{{ . }}</p>{{ end }}
+    <div class="actions"><a class="btn" href="{{ .url }}">Read the coursebook</a></div>
+  </article>
+  {{- end }}
+  <p class="after-cards"><a class="btn" href="{{ .profile }}">All my coursebooks on H2O</a></p>
+  {{- end }}
+</div>
+{{ end }}

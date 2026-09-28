@@ -1,0 +1,48 @@
+{{ define "main" }}
+<div class="narrow">
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{- with site.Data.writing }}
+  <section aria-labelledby="w-h">
+    <h2 id="w-h" class="section-title">Commentary</h2>
+    <div class="card">
+      <ul class="entries">
+        {{- range .writing }}
+        <li>
+          {{- if .url }}<a class="entry-title" href="{{ .url }}">{{ .title }}</a>{{ else }}<span class="entry-title">{{ .title }}</span>{{ end }}
+          <span class="entry-meta"><em>{{ .venue }}</em>, {{ .date }}</span>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="p-h">
+    <h2 id="p-h" class="section-title">Presentations &amp; Podcasts</h2>
+    <div class="card">
+      <ul class="entries">
+        {{- range .presentations }}
+        <li>
+          {{- if .url }}<a class="entry-title" href="{{ .url }}">{{ .title }}</a>{{ else }}<span class="entry-title">{{ .title }}</span>{{ end }}
+          <span class="entry-meta">{{ .event }}, {{ .date }}</span>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="m-h">
+    <h2 id="m-h" class="section-title">Press</h2>
+    <div class="card">
+      <ul class="entries">
+        {{- range .press }}
+        <li>
+          {{- if .url }}<a class="entry-title" href="{{ .url }}">{{ .title }}</a>{{ else }}<span class="entry-title">{{ .title }}</span>{{ end }}
+          <span class="entry-meta"><em>{{ .venue }}</em>, {{ .date }}</span>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+  </section>
+  {{- end }}
+</div>
+{{ end }}

@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="narrow">
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{- with .Content }}<div class="lede">{{ . }}</div>{{ end }}
+  {{- range site.Data.teaching.courses }}
+  <section class="card course" id="{{ .slug }}" aria-labelledby="{{ .slug }}-h">
+    <h2 id="{{ .slug }}-h" class="course-title">{{ .name }}</h2>
+    <p class="course-terms">{{ .terms }}</p>
+    {{- with .description }}<p class="course-desc">{{ . }}</p>{{ end }}
+    {{- range .materials }}
+    <div class="materials">
+      <h3 class="label">{{ .group }}</h3>
+      <ul class="file-list">
+        {{- range .items }}
+        {{- $href := "" }}{{ with .file }}{{ $href = . | relURL }}{{ end }}{{ with .url }}{{ $href = . }}{{ end }}
+        <li><a href="{{ $href }}">{{ .label }}</a>{{ if .file }} <span class="kind">PDF</span>{{ end }}</li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- else }}
+    <p class="muted">Materials will be posted when the course is taught.</p>
+    {{- end }}
+  </section>
+  {{- end }}
+</div>
+{{ end }}

@@ -1,0 +1,56 @@
+{{ define "main" }}
+<div class="home">
+  <aside class="profile" aria-label="About">
+    <img class="portrait" src="{{ site.Params.photo | relURL }}" alt="Portrait of {{ site.Params.name }}" width="600" height="600">
+    <div class="profile-text">
+      <h1 class="profile-name">{{ site.Params.name }}</h1>
+      <p class="profile-role">{{ site.Params.title }}<br>{{ site.Params.institution }}</p>
+      <p class="profile-contact"><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></p>
+      <p class="profile-links">
+        <a href="{{ "bio/" | relURL }}">Bio</a>
+        {{- range first 2 site.Params.profiles }} <span aria-hidden="true">·</span> <a href="{{ .url }}">{{ .name }}</a>{{ end }}
+      </p>
+    </div>
+    <div class="profile-areas">
+      <h2 class="label">Research</h2>
+      <ul class="areas">
+        {{- range site.Data.research_areas }}
+        <li>{{ . }}</li>
+        {{- end }}
+      </ul>
+    </div>
+  </aside>
+
+  <div class="home-main">
+    <section id="scholarship" aria-labelledby="published-h">
+      <h2 id="published-h" class="section-title">Published Work</h2>
+      {{- range site.Data.scholarship.articles }}
+      <article class="card pub">
+        <h3 class="pub-title">{{ .title }}</h3>
+        {{- with .subtitle }}<p class="pub-subtitle">{{ . }}</p>{{ end }}
+        <p class="pub-meta">{{ with .authors }}<span class="pub-authors">{{ . }}</span> · {{ end }}<span class="pub-cite">{{ .citation }}</span></p>
+        {{- with .abstract }}
+        <details class="abstract"><summary>Abstract</summary><p>{{ . }}</p></details>
+        {{- end }}
+        {{- with .note }}<p class="pub-note">{{ . }}</p>{{ end }}
+        {{ partial "actions.html" .links }}
+      </article>
+      {{- end }}
+    </section>
+    <section id="in-progress" aria-labelledby="wip-h">
+      <h2 id="wip-h" class="section-title">Works in Progress</h2>
+      <div class="card">
+        <ul class="plain-list">
+          {{- range site.Data.scholarship.works_in_progress }}
+          <li>
+            <span class="wip-title">{{ .title }}</span>
+            {{- range .links }} <a class="inline-link" href="{{ .url }}">{{ .name }}</a>{{ end }}
+          </li>
+          {{- end }}
+        </ul>
+      </div>
+    </section>
+
+  </div>
+</div>
+{{ end }}

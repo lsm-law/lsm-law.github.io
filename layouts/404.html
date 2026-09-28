@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="narrow">
+  <h1 class="page-title">Page not found</h1>
+  <div class="card">
+    <p>That page doesn't exist, or it has moved.</p>
+    <ul class="plain-list">
+      <li><a href="{{ "/" | relURL }}">Home and scholarship</a></li>
+      {{- range site.Menus.main }}{{ if .Page }}<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>{{ end }}{{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,12 @@
+{{/* A row of outline buttons. Pass a slice of {name,url} or {label,file,url}. */}}
+{{- with . }}
+<div class="actions">
+  {{- range . }}
+  {{- $href := "" }}
+  {{- with .file }}{{ $href = . | relURL }}{{ end }}
+  {{- with .url }}{{ $href = . }}{{ end }}
+  {{- $isPDF := strings.HasSuffix $href ".pdf" }}
+  <a class="btn" href="{{ $href }}">{{ .name | default .label }}{{ if $isPDF }} <span class="btn-kind">PDF</span>{{ end }}</a>
+  {{- end }}
+</div>
+{{- end }}

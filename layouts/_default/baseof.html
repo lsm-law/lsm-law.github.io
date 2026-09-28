@@ -41,6 +41,19 @@
   {{ partial "footer.html" . }}
   <script>
   (function () {
+    // Open outside sites and PDFs in a new tab; keep site navigation in the same tab.
+    document.querySelectorAll('a[href]').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (/^(mailto:|tel:|#)/.test(href)) return;
+      var external = a.host && a.host !== location.host;
+      var pdf = /\.pdf($|[?#])/i.test(a.pathname);
+      if (external || pdf) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener');
+      }
+    });
+  })();
+  (function () {
     var btn = document.querySelector('.nav-toggle');
     var nav = document.getElementById('site-nav');
     if (btn && nav) {

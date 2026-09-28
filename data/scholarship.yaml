@@ -17,6 +17,8 @@ articles:
     citation: "125 Penn St. L. Rev. 1 (2020)"
     note: "Cited in The Future of Press Freedom (RonNell Andersen Jones & Sonja West eds., 2025); Roosevelt Institute, The Political Economy of the US Media System (2025); Abrams Institute at Yale Law School, The Press Clause: The Forgotten First Amendment (2024); amicus brief on behalf of media organizations and press freedom advocates in Jenner & Block v. Dep't of Justice and Perkins Coie v. Dep't of Justice (D.D.C. 2025)."
     links:
+      - name: Journal
+        url: "https://elibrary.law.psu.edu/pslr/vol125/iss1/1/"
       - name: SSRN
         url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4898739"
       - name: Campbell Repository
@@ -26,6 +28,8 @@ articles:
     year: 2020
     citation: "47 Hastings Const. L.Q. 197 (2020)"
     links:
+      - name: Journal
+        url: "https://repository.uclawsf.edu/hastings_constitutional_law_quaterly/vol47/iss2/3/"
       - name: SSRN
         url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4898737"
       - name: Campbell Repository
@@ -36,6 +40,8 @@ articles:
     year: 2019
     citation: "28 Wm. & Mary Bill Rts. J. 319 (2019)"
     links:
+      - name: Journal
+        url: "https://scholarship.law.wm.edu/wmborj/vol28/iss2/4/"
       - name: SSRN
         url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4898735"
       - name: Campbell Repository
@@ -46,6 +52,8 @@ articles:
     citation: "68 Duke L.J. 175 (2018)"
     note: "Cited in Timothy Zick, Managed Dissent (2023). Duke Law 2019 Writing Award."
     links:
+      - name: Journal
+        url: "https://dlj.law.duke.edu/article/leave-your-guns-at-home-morgan-vol68-iss1/"
       - name: SSRN
         url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4898691"
 

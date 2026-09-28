@@ -4,7 +4,6 @@ courses:
   - name: "Civil Procedure"
     slug: civil-procedure
     terms: "Fall 2025, Spring 2026, Fall 2026"
-    description: "Civil procedure is really the combination of two separate but related courses. First, civil procedure teaches the fundamentals of the adjudicative process in the United States. Second, the course is also about the organization of the American judicial system and how the federal-state structure shapes civil litigation."
     materials:
       - group: Syllabus
         items:
@@ -32,7 +31,6 @@ courses:
   - name: "Federal Courts"
     slug: federal-courts
     terms: "Spring 2026, Fall 2026"
-    description: "Federal Courts sits at the intersection of Constitutional Law and Civil Procedure, taking the “constitutional” parts of Civil Procedure—especially jurisdiction and the doctrines related to federalism—and cranks them up to 11."
     materials:
       - group: Syllabus
         items:

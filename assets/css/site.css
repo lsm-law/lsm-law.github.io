@@ -2,12 +2,12 @@
    Clean card layout modeled on georgeyean.github.io, in a soft sage palette. */
 
 :root {
-  --bg: #f3f5f3;
+  --bg: #edf3ef;
   --surface: #ffffff;
-  --surface-tint: #f7f9f8;
+  --surface-tint: #f3f8f5;
   --text: #25302d;
   --text-muted: #5f6b67;
-  --border: #dfe5e2;
+  --border: #d8e3dd;
   --accent: #4f7d73;         /* sage-teal */
   --accent-soft: #e4eeea;
   --link: #3b6b61;
@@ -42,6 +42,7 @@ a:hover { color: var(--link-hover); text-decoration: underline; text-underline-o
 /* ── Header ─────────────────────────────────────────── */
 .site-header {
   position: sticky; top: 0; z-index: 20;
+  border-top: 3px solid var(--accent);
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: saturate(140%) blur(6px);
   border-bottom: 1px solid var(--border);
@@ -84,7 +85,7 @@ a:hover { color: var(--link-hover); text-decoration: underline; text-underline-o
   color: var(--text-muted); margin: 0 0 10px;
 }
 .page-title { font-size: 2rem; margin: 0 0 28px; letter-spacing: 0.01em; }
-.section-title { font-size: 1.15rem; font-weight: 700; margin: 0 0 14px; letter-spacing: 0.02em; }
+.section-title { font-size: 1.15rem; font-weight: 700; margin: 0 0 14px; letter-spacing: 0.02em; color: var(--accent); }
 section + section { margin-top: 40px; }
 .lede { color: var(--text-muted); margin: -12px 0 28px; }
 .lede p { margin: 0; }

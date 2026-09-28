@@ -49,7 +49,7 @@
         <ul class="plain-list">
           {{- range site.Data.scholarship.works_in_progress }}
           <li>
-            <span class="wip-title">{{ .title }}</span>
+            <span class="wip-title">{{ .title }}</span>{{ with .authors }} <span class="wip-authors">({{ . }})</span>{{ end }}
             {{- range .links }} <a class="inline-link" href="{{ .url }}">{{ .name }}</a>{{ end }}
           </li>
           {{- end }}

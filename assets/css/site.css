@@ -133,6 +133,7 @@ section + section { margin-top: 40px; }
 .plain-list li { padding: 7px 0; border-bottom: 1px solid var(--border); }
 .plain-list li:last-child { border-bottom: 0; }
 .wip-title { font-weight: 600; }
+.wip-authors { color: var(--text-muted); font-size: 0.93rem; }
 .inline-link { font-size: 0.9rem; margin-left: 8px; }
 
 .entries { list-style: none; margin: 0; padding: 0; }

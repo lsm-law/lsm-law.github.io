@@ -5,10 +5,6 @@ courses:
     slug: civil-procedure
     terms: "Fall 2025, Spring 2026, Fall 2026"
     materials:
-      - group: Syllabus
-        items:
-          - label: "Syllabus, Spring 2026"
-            file: "files/teaching/civpro-syllabus-spring-2026.pdf"
       - group: Final Exams
         items:
           - label: "Final Exam, Spring 2026"
@@ -32,10 +28,6 @@ courses:
     slug: federal-courts
     terms: "Spring 2026, Fall 2026"
     materials:
-      - group: Syllabus
-        items:
-          - label: "Syllabus, Fall 2026"
-            file: "files/teaching/fedcourts-syllabus-fall-2026.pdf"
       - group: Final Exams
         items:
           - label: "Final Exam, Spring 2026"

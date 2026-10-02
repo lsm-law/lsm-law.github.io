@@ -1,10 +1,6 @@
 # Shorter writing, presentations, and press. Newest first.
 
 writing:
-  - title: "An \u201cOverlay Journal\u201d System for Law Reviews"
-    venue: "Full Court"
-    date: "Aug. 14, 2026"
-    url: "https://fullcourt.offprint.app/a/3mt2f6qerzv23-an-overlay-journal-system-for-law-reviews"
   - title: "How Originalism Broke the First Amendment"
     venue: "Balls & Strikes"
     date: "Apr. 14, 2026"
@@ -17,6 +13,18 @@ writing:
     venue: "Proxy Preview"
     date: "Mar. 14, 2024"
     url: "https://www.proxypreview.org/all-contributor-articles/scotus-decision-could-scuttle-regulatory-agencies-and-shareholder-rights"
+
+# Special projects: proposed legislation, institutional proposals, etc. Newest first.
+# Fields: title, date, description (optional), venue (optional), url or file
+special_projects:
+  - title: "Capital Stay Integrity Act"
+    date: "Oct. 1, 2026"
+    description: "Proposed legislation withdrawing the Supreme Court's ability to vacate lower court stays in capital cases"
+    file: "files/projects/capital-stay-integrity-act.pdf"
+  - title: "An \u201cOverlay Journal\u201d System for Law Reviews"
+    venue: "Full Court"
+    date: "Aug. 14, 2026"
+    url: "https://fullcourt.offprint.app/a/3mt2f6qerzv23-an-overlay-journal-system-for-law-reviews"
 
 presentations:
   - title: "Making Sense of the Second Amendment After Wolford and Hemani"

@@ -16,6 +16,22 @@
     </div>
   </section>
 
+  <section aria-labelledby="sp-h">
+    <h2 id="sp-h" class="section-title">Special Projects</h2>
+    <div class="card">
+      <ul class="entries">
+        {{- range .special_projects }}
+        {{- $href := "" }}{{ with .file }}{{ $href = . | relURL }}{{ end }}{{ with .url }}{{ $href = . }}{{ end }}
+        <li>
+          {{- if $href }}<a class="entry-title" href="{{ $href }}">{{ .title }}</a>{{ else }}<span class="entry-title">{{ .title }}</span>{{ end }}
+          <span class="entry-meta">{{ with .venue }}<em>{{ . }}</em>, {{ end }}{{ .date }}</span>
+          {{- with .description }}<span class="entry-desc">{{ . }}</span>{{ end }}
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+  </section>
+
   <section aria-labelledby="p-h">
     <h2 id="p-h" class="section-title">Presentations &amp; Podcasts</h2>
     <div class="card">

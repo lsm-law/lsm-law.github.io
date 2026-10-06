@@ -5,6 +5,9 @@ writing:
     venue: "Balls & Strikes"
     date: "Oct. 6, 2026"
     url: "https://ballsandstrikes.org/court-reform/christa-pike-supreme-court-congress-response/"
+    related:
+      label: "See the bill: Capital Stay Integrity Act"
+      file: "files/projects/capital-stay-integrity-act.pdf"
   - title: "How Originalism Broke the First Amendment"
     venue: "Balls & Strikes"
     date: "Apr. 14, 2026"
@@ -19,12 +22,16 @@ writing:
     url: "https://www.proxypreview.org/all-contributor-articles/scotus-decision-could-scuttle-regulatory-agencies-and-shareholder-rights"
 
 # Special projects: proposed legislation, institutional proposals, etc. Newest first.
-# Fields: title, date, description (optional), venue (optional), url or file
+# Fields: title, date, description (optional), venue (optional), url or file,
+#         related (optional: {label, url or file}) — also works on commentary entries
 special_projects:
   - title: "Capital Stay Integrity Act"
     date: "Oct. 1, 2026"
     description: "Proposed legislation withdrawing the Supreme Court's ability to vacate lower court stays in capital cases"
     file: "files/projects/capital-stay-integrity-act.pdf"
+    related:
+      label: "Discussed in Balls & Strikes"
+      url: "https://ballsandstrikes.org/court-reform/christa-pike-supreme-court-congress-response/"
   - title: "An \u201cOverlay Journal\u201d System for Law Reviews"
     venue: "Full Court"
     date: "Aug. 14, 2026"

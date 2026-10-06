@@ -10,6 +10,7 @@
         <li>
           {{- if .url }}<a class="entry-title" href="{{ .url }}">{{ .title }}</a>{{ else }}<span class="entry-title">{{ .title }}</span>{{ end }}
           <span class="entry-meta"><em>{{ .venue }}</em>, {{ .date }}</span>
+          {{- with .related }}{{ $r := "" }}{{ with .file }}{{ $r = . | relURL }}{{ end }}{{ with .url }}{{ $r = . }}{{ end }}<a class="entry-related" href="{{ $r }}">{{ .label }} →</a>{{ end }}
         </li>
         {{- end }}
       </ul>
@@ -26,6 +27,7 @@
           {{- if $href }}<a class="entry-title" href="{{ $href }}">{{ .title }}</a>{{ else }}<span class="entry-title">{{ .title }}</span>{{ end }}
           <span class="entry-meta">{{ with .venue }}<em>{{ . }}</em>, {{ end }}{{ .date }}</span>
           {{- with .description }}<span class="entry-desc">{{ . }}</span>{{ end }}
+          {{- with .related }}{{ $r := "" }}{{ with .file }}{{ $r = . | relURL }}{{ end }}{{ with .url }}{{ $r = . }}{{ end }}<a class="entry-related" href="{{ $r }}">{{ .label }} →</a>{{ end }}
         </li>
         {{- end }}
       </ul>

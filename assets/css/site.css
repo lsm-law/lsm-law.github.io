@@ -144,6 +144,7 @@ section + section { margin-top: 40px; }
 span.entry-title { color: var(--text); }
 .entry-meta { color: var(--text-muted); font-size: 0.93rem; }
 .entry-desc { font-size: 0.95rem; margin-top: 2px; }
+.entry-related { font-size: 0.85rem; margin-top: 4px; align-self: flex-start; }
 
 /* Teaching */
 .course-title { font-size: 1.3rem; margin: 0 0 2px; }

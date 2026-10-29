@@ -40,6 +40,13 @@ special_projects:
     date: "Aug. 14, 2026"
     url: "https://fullcourt.offprint.app/a/3mt2f6qerzv23-an-overlay-journal-system-for-law-reviews"
 
+# Amicus briefs. Newest first. Fields: title (Markdown; italicize case names), date, description, file or url
+amicus_briefs:
+  - title: "*Viramontes v. Cook County*"
+    date: "Oct. 28, 2026"
+    description: "with Jacob D. Charles"
+    file: "files/amicus/viramontes-v-cook-county-amicus.pdf"
+
 presentations:
   - title: "Making Sense of the Second Amendment After Wolford and Hemani"
     event: "Discussant, SEALS Conference"

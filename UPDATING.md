@@ -16,7 +16,7 @@ Every change is saved as a checkpoint in GitHub, so any change can be undone ("r
 |---|---|
 | Name, title, email, profile links, footer credit | `hugo.yaml` |
 | Articles and works in progress | `data/scholarship.yaml` |
-| Commentary, special projects, talks, podcasts, press | `data/writing.yaml` (project PDFs in `static/files/projects/`) |
+| Commentary, special projects, amicus briefs, talks, podcasts, press | `data/writing.yaml` (PDFs in `static/files/projects/` and `static/files/amicus/`) |
 | Courses, exams, practice assessments | `data/teaching.yaml` (PDFs in `static/files/teaching/`) |
 | Coursebooks | `data/coursebooks.yaml` |
 | Research areas (homepage sidebar) | `data/research_areas.yaml` |

@@ -17,6 +17,22 @@
     </div>
   </section>
 
+  <section aria-labelledby="ab-h">
+    <h2 id="ab-h" class="section-title">Amicus Briefs</h2>
+    <div class="card">
+      <ul class="entries">
+        {{- range .amicus_briefs }}
+        {{- $href := "" }}{{ with .file }}{{ $href = . | relURL }}{{ end }}{{ with .url }}{{ $href = . }}{{ end }}
+        <li>
+          {{- if $href }}<a class="entry-title" href="{{ $href }}">{{ .title | markdownify }}</a>{{ else }}<span class="entry-title">{{ .title | markdownify }}</span>{{ end }}
+          <span class="entry-meta">{{ .date }}</span>
+          {{- with .description }}<span class="entry-desc">{{ . }}</span>{{ end }}
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+  </section>
+
   <section aria-labelledby="sp-h">
     <h2 id="sp-h" class="section-title">Special Projects</h2>
     <div class="card">
@@ -28,22 +44,6 @@
           <span class="entry-meta">{{ with .venue }}<em>{{ . }}</em>, {{ end }}{{ .date }}</span>
           {{- with .description }}<span class="entry-desc">{{ . }}</span>{{ end }}
           {{- with .related }}{{ $r := "" }}{{ with .file }}{{ $r = . | relURL }}{{ end }}{{ with .url }}{{ $r = . }}{{ end }}<a class="entry-related" href="{{ $r }}">{{ .label }} →</a>{{ end }}
-        </li>
-        {{- end }}
-      </ul>
-    </div>
-  </section>
-
-  <section aria-labelledby="ab-h">
-    <h2 id="ab-h" class="section-title">Amicus Briefs</h2>
-    <div class="card">
-      <ul class="entries">
-        {{- range .amicus_briefs }}
-        {{- $href := "" }}{{ with .file }}{{ $href = . | relURL }}{{ end }}{{ with .url }}{{ $href = . }}{{ end }}
-        <li>
-          {{- if $href }}<a class="entry-title" href="{{ $href }}">{{ .title | markdownify }}</a>{{ else }}<span class="entry-title">{{ .title | markdownify }}</span>{{ end }}
-          <span class="entry-meta">{{ .date }}</span>
-          {{- with .description }}<span class="entry-desc">{{ . }}</span>{{ end }}
         </li>
         {{- end }}
       </ul>
